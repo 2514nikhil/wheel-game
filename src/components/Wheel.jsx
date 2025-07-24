@@ -1,4 +1,4 @@
-import "../styles/Wheel.css";
+import "../styles/wheel.css";
 
 function Wheel({ rotation, spinning, result }) {
   const wheelStyle = {

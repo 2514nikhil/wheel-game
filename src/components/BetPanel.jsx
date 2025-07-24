@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/betPanel.css";
+import "../styles/betpanel.css";
 
 function BetPanel({ onSpin, spinning }) {
   const [mode, setMode] = useState("manual");

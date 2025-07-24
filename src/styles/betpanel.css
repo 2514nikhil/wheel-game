@@ -1,0 +1,160 @@
+.bet-panel {
+  background-color: #1e2a36;
+  width: 280px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.toggle-buttons {
+  display: flex;
+  background-color: #12202c;
+  border-radius: 24px;
+  padding: 4px;
+}
+
+.toggle-track {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.toggle-track button {
+  flex: 1;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  padding: 8px 0;
+  z-index: 1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 24px;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 8px);
+  height: calc(100% - 8px);
+  background-color: #2c3e50;
+  border-radius: 20px;
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.toggle-slider.auto {
+  left: calc(50% + 4px);
+}
+
+.toggle-track button:first-child {
+  color: white;
+}
+
+.toggle-slider.auto~button:first-child {
+  color: #ccc;
+}
+
+.toggle-slider.auto~button:last-child {
+  color: white;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  background: none;
+  color: #ccc;
+  border: none;
+  padding: 8px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.toggle-buttons .active {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.bet-amount-box {
+  display: flex;
+  align-items: center;
+  background-color: #12202c;
+  border-radius: 6px;
+  overflow: hidden;
+  /* Add padding for better fit */
+  padding: 0 4px;
+  min-height: 40px;
+}
+
+.bet-amount-box input {
+  flex: 1;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.bet-multipliers {
+  display: flex;
+  border-left: 1px solid #2a3a48;
+  height: 100%;
+  align-items: center;
+}
+
+.bet-multipliers button {
+  background: none;
+  border: none;
+  color: #0f0;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  font-size: 1.1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bet-multipliers button:last-child {
+  color: #ff5252;
+  font-size: 1.2rem;
+  padding-right: 8px;
+}
+
+select {
+  background-color: #12202c;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.bet-btn {
+  background-color: #66ff00;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
